@@ -1,24 +1,72 @@
-
 <!doctype html>
 <html>
-  <head>
-      <title>동개</title>
-      <meta charset="utf-8">
-  </head>
+
+<head>
+  <title>동개</title>
+  <meta charset="utf-8">
+</head>
 
 <body>
   <h1><a href="index.html">미미에게</a></h1>
-  <ol>
-    <li><a href="1.html">동개</a></li>
-    <li> <a href="2.html">자솜</a></li>
-    <li> <a href="3.html">답장</a></li>
-    <li> <a href="4.html">마우스</a></li>
-    <li> <a href="5.html">새해</a></li>
-  </ol>
+  <style>
+    body{
+      margin: 30px;
+    }
+    a {
+      color:rgb(136, 115, 57);
+      text-decoration: none;
+    }
+    h1{
+      font: size:60px;
+      text-align:center;
+      border-bottom:1px solid gray;
+      padding: 20px;
+      margin:0;
+    }
+    #grid ol{
+      border-right: gray 1px solid;
+      width: 100px;
+      margin: 0;
+      padding:35px;
+    }
+    #grid{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    }
+    @media(max-width: 800px){
+      #grid {
+        display:block;
+      }
+      #grid ol{
+      border-right:none;
+    }
+    h1{
+      border-bottom:none;
+    }  
+  </style>
+  <div id="grid">
+    <ol>
+      <li> <a href="1.html" style="text-decoration:underline;">동개</a></li>
+      <li> <a href="2.html">자솜</a></li>
+      <li> <a href="3.html">답장</a></li>
+      <li> <a href="4.html">마우스</a></li>
+      <li> <a href="5.html">새해</a></li>
+      <li> <a href="6.html">비지걸</a></li>
 
-  <h2>동개</h2>
-  <p>김미미는 <strong><u><a href="https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=%EB%98%A5%EA%B0%9C" target="_blank">동개</a></u></strong>다.<br> 이유는 없다.<br> 그냥 <strong>동개</strong>다.<br> 곱표도 모르는 <strong>동개</strong>다.</p>
-  <img src="ddong.jpg" px="45">
-   <p>사실 고백할게 있다.<br> 펄을 보려고 하였으나 사샤 이후로 공작웅앵 보기가 힘들어져 어브노말을 봐벌였다.<br> 너무 재밌네요ㅋ 그래서 벌써 2권이네 하루만에 한권 반을 봐벌였다.<br> 힘조서 참아야겠다.<br> 이러다 또 격차 벌어져서 <strong>동개</strong> 다 볼 때까지 망부석으로 살아가겠지.<br> <strong>동개동개</strong></p>
+    </ol>
+    <div>
+      <h2>동개</h2>
+      <p>김미미는 <strong><u><a
+              href="https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=%EB%98%A5%EA%B0%9C"
+              target="_blank">동개</a></u></strong>다.<br> 이유는 없다.<br> 그냥 <strong>동개</strong>다.<br> 곱표도 모르는
+        <strong>동개</strong>다.</p>
+      <img src="picture/ddong.jpg" width="100%">
+      <p>사실 고백할게 있다.<br> 펄을 보려고 하였으나 사샤 이후로 공작웅앵 보기가 힘들어져 어브노말을 봐벌였다.<br> 너무 재밌네요ㅋ 그래서 벌써 2권이네 하루만에 한권 반을 봐벌였다.<br> 힘조서
+        참아야겠다.<br> 이러다 또 격차 벌어져서 <strong>동개</strong> 다 볼 때까지 망부석으로 살아가겠지.<br> <strong>동개동개</strong></p>
+      </div>
+  </div>
+  
+  
 </body>
+
 </html>
